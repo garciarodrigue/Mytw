@@ -22,13 +22,16 @@
   <link href="style.css" rel="stylesheet" type="text/css" />
 </head>
 <style>
+#tw{
+border-right: green 10px double;
+} 
 body{
 background-color:black;
 }
 </style>
 <body>
 
-  <iframe src="https://player.twitch.tv/?channel=t3nshi_akira&parent=mytw.vercel.app" width="350px" height="350px">
+  <iframe id="tw" src="https://player.twitch.tv/?channel=t3nshi_akira&parent=mytw.vercel.app" width="350px" height="350px">
     php -S localhost:8000
     
   </iframe>
