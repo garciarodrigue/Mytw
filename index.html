@@ -41,7 +41,38 @@ text-align: center;
 
 body{
 background-color:black;
+
 }
+
+#consola {
+
+display: block;
+
+font-family: monospace;
+
+white-space: nowrap;
+
+border-right: 4px solid;
+
+width: 12ch;
+
+animation: typing 2s steps (12), blink .5s infinite step-end alternate;
+
+overflow: hidden;
+
+}
+
+@keyframes typing {
+
+from { width: 0 }
+
+}
+
+@keyframes blink { 50% { border-color: transparent
+
+}
+}
+
 </style>
 
 
@@ -53,9 +84,12 @@ background-color:black;
 
 <div>
   <iframe id="tw" src="https://player.twitch.tv/?channel=t3nshi_akira&parent=mytw.vercel.app" width="350px" height="350px">
-    php -S localhost:8000
     
   </iframe>
+</div>
+<div>
+	<h4 id="consola">!Hola Coders!</h4>
+
 </div>
 
 
